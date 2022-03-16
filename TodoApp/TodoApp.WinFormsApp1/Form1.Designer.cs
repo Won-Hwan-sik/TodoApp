@@ -1,16 +1,17 @@
-﻿namespace TodoApp.WindowsFormsApp
+﻿
+namespace TodoApp.WinFormsApp1
 {
     partial class Form1
     {
         /// <summary>
-        /// 필수 디자이너 변수입니다.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 사용 중인 모든 리소스를 정리합니다.
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,17 +21,16 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.chkIsDone = new System.Windows.Forms.CheckBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -40,43 +40,35 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 34);
+            this.label1.Location = new System.Drawing.Point(37, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "할일";
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(100, 31);
+            this.txtTitle.Location = new System.Drawing.Point(74, 26);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(160, 21);
+            this.txtTitle.Size = new System.Drawing.Size(217, 23);
             this.txtTitle.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "완료여부";
             // 
             // chkIsDone
             // 
             this.chkIsDone.AutoSize = true;
-            this.chkIsDone.Location = new System.Drawing.Point(105, 78);
+            this.chkIsDone.Location = new System.Drawing.Point(74, 69);
             this.chkIsDone.Name = "chkIsDone";
-            this.chkIsDone.Size = new System.Drawing.Size(15, 14);
-            this.chkIsDone.TabIndex = 3;
+            this.chkIsDone.Size = new System.Drawing.Size(74, 19);
+            this.chkIsDone.TabIndex = 2;
+            this.chkIsDone.Text = "완료여부";
             this.chkIsDone.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(266, 29);
+            this.btnAdd.Location = new System.Drawing.Point(307, 26);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 61);
-            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Size = new System.Drawing.Size(75, 62);
+            this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "등록";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -84,21 +76,20 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 124);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 94);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(339, 206);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(345, 191);
+            this.dataGridView1.TabIndex = 4;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 343);
+            this.ClientSize = new System.Drawing.Size(419, 306);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.chkIsDone);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -114,7 +105,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox chkIsDone;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dataGridView1;

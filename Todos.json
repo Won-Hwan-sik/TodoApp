@@ -1,20 +1,42 @@
 [
   {
-    
     "Id": 1,
     "Title": "ASP.NET",
     "IsDone": false
   },
   {
-    
     "Id": 2,
     "Title": "Blazor",
     "IsDone": false
   },
   {
-    
     "Id": 3,
     "Title": "C#",
+    "IsDone": true
+  },
+  {
+    "Id": 4,
+    "Title": "Java",
+    "IsDone": true
+  },
+  {
+    "Id": 5,
+    "Title": "C++",
+    "IsDone": false
+  },
+  {
+    "Id": 6,
+    "Title": "Visual Basic",
+    "IsDone": false
+  },
+  {
+    "Id": 7,
+    "Title": "HttpClient",
+    "IsDone": true
+  },
+  {
+    "Id": 8,
+    "Title": "HttpClient",
     "IsDone": true
   }
 ]
